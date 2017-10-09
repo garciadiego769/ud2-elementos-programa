@@ -8,17 +8,18 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 	// write your code here
-
-        System.out.println("Introduce el número 1:");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String numero1 = br.readLine();
 
-        System.out.println("Escribe el número 2:");
-        String numero2=br.readLine();
+        System.out.print("Introduce número 1: ");
+        int numero1 = Integer.parseInt(br.readLine()); /* en vez de declararla como texto la declaramos como entero y pasamos los datos a numericos con Integer... */
 
-        System.out.println(numero1  numero2);
+        System.out.print("Introduce número 2: ");
+        int numero2 = Integer.parseInt(br.readLine());
 
 
+        int operacion=numero1*numero2;
+
+        System.out.print(operacion);
 
     }
 }
