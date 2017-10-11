@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Introduce un número");
         int numero=Integer.parseInt(br.readLine());
 
-        if (numero!=0){
+        while (numero!=0){
             if(numero <0){
                 int operacion=numero*(-1);
                 System.out.println("Valor absouluto: " + operacion);
@@ -20,6 +20,9 @@ public class Main {
             else{
                 System.out.println("Valor absoluto: " +numero);
             }
+
+            System.out.println("Introduce un número");
+            numero=Integer.parseInt(br.readLine());
         }
     }
 }
