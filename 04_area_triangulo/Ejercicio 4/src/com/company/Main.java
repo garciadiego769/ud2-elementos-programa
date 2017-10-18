@@ -11,12 +11,12 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("Introduce una base: ");
-        int base=Integer.parseInt(br.readLine());
+        double base=Double.parseDouble(br.readLine());
 
         System.out.println("Inntroduce una altura: ");
-        int altura=Integer.parseInt(br.readLine());
+        double altura=Double.parseDouble(br.readLine());
 
-        int area=(base*altura)/2;
+        double area=(base*altura)/2;
 
         System.out.println("El área es: " + area);
 
