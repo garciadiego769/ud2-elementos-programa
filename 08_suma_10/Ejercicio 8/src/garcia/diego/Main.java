@@ -10,18 +10,16 @@ public class Main {
         // write your code here
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int t=0;
         int numero= 0;
         int suma=0;
-       do{
+        for (int t = 0; t < 10; t++) {
+
             System.out.println("Introduce número: ");
             numero = Integer.parseInt(br.readLine());
 
 
             suma= suma+numero;
-            t=t+1;
         }
-        while(t<10);
 
         System.out.println("El resultado es: " + " " + suma);
     }
