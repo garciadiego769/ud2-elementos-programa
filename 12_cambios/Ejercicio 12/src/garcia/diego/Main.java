@@ -18,38 +18,40 @@ public class Main {
             System.out.println("Escribe la cantidad introducida: ");
             c=Double.parseDouble(br.readLine());
         }
-        while (c<p || c%5!=0);
+        while (c<p || (c*100)%5!=0);
 
         if (c==p){
             System.out.println("Aqui tiene su producto");
         }
         else{
-            /* hacemos la conversión de double a enteros*/
+            /* hacemos la conversión de double a enteros
             int precio=(int)p;
-            int cantidad=(int)c;
+            int cantidad=(int)c;*/
 
-            int cambio=(cantidad-precio)*100;
-            int monedas=cambio/200;
+            double cambio=(c-p)*100;
+
+            int cambio1=(int)cambio;
+            int monedas=cambio1/200;
             System.out.println("Monedas de 2€ usadas: "+monedas);
             cambio=cambio%200;
 
-            monedas=cambio/100;
+            monedas=cambio1/100;
             System.out.println("Monedas de 1€ usadas: "+monedas);
             cambio=cambio%100;
 
-            monedas=cambio/50;
+            monedas=cambio1/50;
             System.out.println("Monedas de 50c usadas:"+monedas);
             cambio=cambio%50;
 
-            monedas=cambio/20;
+            monedas=cambio1/20;
             System.out.println("Monedas de 20c usadas: "+monedas);
             cambio=cambio%20;
 
-            monedas=cambio/10;
+            monedas=cambio1/10;
             System.out.println("Monedas de 10c usadas: "+monedas);
             cambio=cambio%10;
 
-            monedas= cambio/5;
+            monedas= cambio1/5;
             System.out.println("Monedas de 5c usadas: "+monedas);
         }
     }
